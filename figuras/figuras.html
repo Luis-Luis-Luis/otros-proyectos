@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="figuras.css">
+  <title>Figuras</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="h1">Figuras geométricas</h1>
+  </header>
+
+  <main>    
+    <p class="paragraph">Elige una figura para conocer su área:</p>
+    
+    <div class="figuras">
+      <button onclick="triangulo()" class="figuras__boton-triangulo">
+        <div class="figuras__triangulo"></div>
+      </button>
+      <button onclick="circulo()" class="figuras__circulo"></button>
+      <button onclick="rectangulo()" class="figuras__rectangulo"></button>
+    </div>
+    
+    <div id="triangle" class="contenedor">
+      <p class="contenedor__title contenedor__title--triangulo">Triángulo</p>
+      <div class="contenedor__entrada">
+        <label for="baseTriangulo">Base</label>
+        <input type="number" id="baseTriangulo">
+      </div>
+      <div class="contenedor__entrada">
+        <label for="alturaTriangulo">Altura</label>
+        <input type="number" id="alturaTriangulo">
+      </div>
+      <button onclick="calcularTriangulo()" class="contenedor__boton contenedor__boton--triangulo">Calcular</button>
+    </div>
+
+    <div id="circle" class="contenedor">
+      <p class="contenedor__title contenedor__title--circulo">Círculo</p>
+      <div class="contenedor__entrada">
+        <label for="radio">Radio</label>
+        <input type="number" id="radio">
+      </div>
+      <button onclick="calcularCirculo()" class="contenedor__boton contenedor__boton--circulo">Calcular</button>
+    </div>
+    
+    <div id="rectangle" class="contenedor">
+      <p class="contenedor__title contenedor__title--rectangulo">Rectángulo</p>
+      <div class="contenedor__entrada">
+        <label for="baseRectangulo">Base</label>
+        <input type="number" id="baseRectangulo">
+      </div>
+      <div class="contenedor__entrada">
+        <label for="alturaRectangulo">Altura</label>
+        <input type="number" id="alturaRectangulo">
+      </div>
+      <button onclick="calcularRectangulo()" class="contenedor__boton contenedor__boton--rectangulo">Calcular</button>
+    </div>
+    
+    <div id="pantalla" class="pantalla"></div>
+  </main>
+  
+  <footer>
+    <a href="/index.html" class="enlace">Volver al índice</a>
+  </footer>
+  
+  <script src="figuras.js"></script>
+</body>
+</html>

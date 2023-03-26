@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="libros.css">
+  <title>Libros</title>
+</head>
+<body>
+  <h1 class="h1">Libros</h1>
+
+  <div class="libros">
+    <div class="libro">
+      <h2 class="libro__h2">Introduce el primer libro</h2>
+      
+      <input type="text" id="title1" class="libro__input" placeholder="Título">
+      <input type="text" id="author1" class="libro__input" placeholder="Autor">
+      <input type="number" id="year1" class="libro__input" placeholder="Año">
+      <input type="text" id="gender1" class="libro__input" placeholder="Género">
+      
+      <div id="pantalla1" class="libro__pantalla"></div>
+    </div>
+    
+    <div class="libro">
+      <h2 class="libro__h2">Introduce el segundo libro</h2>
+      
+      <input type="text" id="title2" class="libro__input" placeholder="Título">
+      <input type="text" id="author2" class="libro__input" placeholder="Autor">
+      <input type="number" id="year2" class="libro__input" placeholder="Año">
+      <input type="text" id="gender2" class="libro__input" placeholder="Género">
+      
+      <div id="pantalla2" class="libro__pantalla"></div>
+    </div>
+    
+    <div class="libro">
+      <h2 class="libro__h2">Introduce el tercer libro</h2>
+      
+      <input type="text" id="title3" class="libro__input" placeholder="Título">
+      <input type="text" id="author3" class="libro__input" placeholder="Autor">
+      <input type="number" id="year3" class="libro__input" placeholder="Año">
+      <input type="text" id="gender3" class="libro__input" placeholder="Género">
+      
+      <div id="pantalla3" class="libro__pantalla"></div>
+    </div>
+  </div>
+    
+  <button id="botonGuardar" class="button">Guardar los 3 libros</button>
+
+  <div id="pantallaGuardar" class="pantallaGuardar"></div>
+
+  <button id="botonMostrar" class="button">Mostrar los libros</button>
+
+  <div id="pantallaMostrar1" class="pantallaGuardar"></div>
+  <div id="pantallaMostrar2" class="pantallaGuardar"></div>
+  <div id="pantallaMostrar3" class="pantallaGuardar"></div>
+
+  <button id="botonTitulos" class="button">Mostrar los títulos</button>
+
+  <div id="pantallaTitulos" class="pantallaGuardar"></div>
+
+  <a href="/index.html" class="anchor">Volver al índice</a>
+
+  <script src="libros.js"></script>
+</body>
+</html>

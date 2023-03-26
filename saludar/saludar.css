@@ -1,0 +1,78 @@
+/* Estilos generales */
+
+body{
+  font-family: sans-serif;
+}
+
+:root{
+  --ROJO: #c50f0f;
+}
+
+
+
+/* Clases */
+
+.title{
+  text-align: center;
+  background-color: var(--ROJO);
+  color: #fff;
+  line-height: 4em;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-size: clamp(2rem, 8vw, 4rem);
+}
+
+.entradas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.entradas__in{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.entradas__in--last{
+  margin-bottom: 30px;
+}
+
+.entradas__boton{
+  margin-bottom: 30px;
+  border: 2px solid var(--ROJO);
+  background-color: var(--ROJO);
+  color: #fff;
+  padding: 0.5em 2em;
+  border-radius: 1em;
+  font-size: 1rem;
+}
+
+.pantalla{
+  text-align: center;
+}
+
+.enlace{
+  line-height: 4em;
+  margin-left: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--ROJO);
+}
+
+
+
+
+/* hover */
+
+@media(hover:hover){
+  .entradas__boton:hover{
+    background-color: #fff;
+    color: var(--ROJO);
+    font-weight: bold;
+  }
+
+  .enlace:hover{
+    font-size: 1.1em;
+  }
+}

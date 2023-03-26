@@ -1,0 +1,97 @@
+/* estilos generales */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: var(--COLOR-BACK);
+}
+
+:root{
+  --COLOR-BACK: burlywood;
+  --COLOR-FRONT: #592c0e;
+}
+
+
+
+
+/* clases */
+
+.h1{
+  background-color: var(--COLOR-FRONT);
+  color: var(--COLOR-BACK);
+  margin-top: 0;
+  line-height: 3em;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.libros{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.libro{
+  width: calc(100% - 4rem);
+  max-width: 300px;
+  margin: 2rem;
+}
+
+.libro__h2{
+  color: var(--COLOR-FRONT);
+}
+
+.libro__input{
+  border: 1px solid var(--COLOR-FRONT);
+  color: var(--COLOR-FRONT);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.libro__pantalla{
+  color: var(--COLOR-FRONT);
+  line-height: 2em;
+}
+
+.button{
+  display: block;
+  margin: 2rem;
+  border: 2px solid var(--COLOR-FRONT);
+  background-color: var(--COLOR-FRONT);
+  color: var(--COLOR-BACK);
+  font-weight: bold;
+  padding: 0.2em 2em;
+  border-radius: 0.5em;
+}
+
+.pantallaGuardar{
+  margin-left: 2rem;
+  color: var(--COLOR-FRONT);
+}
+
+.anchor{
+  color: var(--COLOR-FRONT);
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 6rem;
+  margin-left: 2rem;
+}
+
+
+
+
+/* hover y active */
+
+@media(hover:hover){
+  .button:hover{
+    background-color: var(--COLOR-BACK);
+    color: var(--COLOR-FRONT);
+  }
+
+  .anchor:hover{
+    color: whitesmoke;
+  }
+}
